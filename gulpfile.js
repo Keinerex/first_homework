@@ -12,7 +12,7 @@ gulp.task('html', function () {
     return gulp.src('src/pages/*.html')
         .pipe(map.init())
         .pipe(map.write('../sourcemaps/'))
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulp.dest('build/'))
         .pipe(connect.reload());
 });
 
@@ -26,7 +26,7 @@ gulp.task('min_css', function () {
             grid: true,
         }))
         .pipe(map.write('../sourcemaps/'))
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulp.dest('build/'))
         .pipe(connect.reload());
 });
 
@@ -39,7 +39,7 @@ gulp.task('css', function () {
             grid: true,
         }))
         .pipe(map.write('../sourcemaps/'))
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulp.dest('build/'))
         .pipe(connect.reload());
 });
 
@@ -55,7 +55,7 @@ gulp.task('js', function () {
 
 gulp.task('server', function () {
     return connect.server({
-        root: 'dist',
+        root: 'build',
         livereload: true,
     });
 });
