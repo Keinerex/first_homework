@@ -1,9 +1,8 @@
-# first_homework
-1) Для строки поиска: <form>, <input type="text"> <input type=""button">
+1) Для строки поиска: <form> <input type="text"> <input type=""button">
   Для главной части: <main>
   Для ссылок на сервисы <ul>
   Для нижней части <footer>
-  Для всех ссылок <a>
+  Для всех ссылок<a>
 2) Ссылки и кнопки реагируют на наведение мышью
 3) Можно использовать margin: auto или display:flex и justify-content: center
 4) display: flex у body позволяем всему кроме footer расти с помощью flex-grow
