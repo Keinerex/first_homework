@@ -6,6 +6,8 @@
     flex-direction: row;
     padding-inline-start: 0;
     flex-wrap: wrap;
+    width: 100%;
     max-width: 750px;
-    margin: 50px auto;
+    margin: 0 auto;
+    row-gap: 20px;
 }

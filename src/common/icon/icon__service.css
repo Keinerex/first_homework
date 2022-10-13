@@ -1,7 +1,7 @@
 .icon__service {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     margin: 3px 10px 3px 3px;
     vertical-align: text-bottom;
     background-repeat: no-repeat;
@@ -36,5 +36,5 @@
 }
 
 .icon__service--practicum {
-    background-image: url(//yastatic.net/s3/home/services/all/svg/praktikum0.svg)
+    background-image: url(https://yastatic.net/s3/home/services/all/svg/praktikum0.svg)
 }

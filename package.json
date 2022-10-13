@@ -9,6 +9,7 @@
     "gulp-connect": "^5.7.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^3.0.0",
+    "normalize.css": "^8.0.1",
     "require-dir": "^1.2.0"
   },
   "scripts": {

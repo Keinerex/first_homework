@@ -1,8 +1,7 @@
 .body {
-    margin: 0;
-    padding: 50px 50px 0 50px;
+    margin: 0 auto;
     font: 0.94em Arial, Helvetica, sans-serif;
-    height: calc(100vh - 50px);
+    height: 95vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10,20 +9,23 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
-
-.container__content{
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+.container{
+    width: 100%;
 }
 .container__top{
+    font-weight: 700;
     max-width: 700px;
     width: 100%;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    min-height: 100px;
-    margin: auto auto;
+    margin: 0 auto;
 }
 .content{
     font-weight: unset;
@@ -31,14 +33,15 @@
     width: 100%;
 }
 .content__subtitle{
-    font-size: 1.2rem;
-
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+.content__title{
+    font-size: 2rem;
 }
 .footer{
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    height: 100px;
-    min-height: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -46,10 +49,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 0 auto;
 }
 .form-search__yandex{
     width: 100%;
-    height: 50px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -64,8 +67,8 @@
 }
 .icon__service {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     margin: 3px 10px 3px 3px;
     vertical-align: text-bottom;
     background-repeat: no-repeat;
@@ -100,7 +103,7 @@
 }
 
 .icon__service--practicum {
-    background-image: url(//yastatic.net/s3/home/services/all/svg/praktikum0.svg)
+    background-image: url(https://yastatic.net/s3/home/services/all/svg/praktikum0.svg)
 }
 .input-search__search-button-connect{
     display: -webkit-box;
@@ -119,6 +122,7 @@
 }
 .input-search__submit-button{
     height: 100%;
+    margin: auto;
     max-width: 100px;
     min-width: 80px;
     -webkit-box-flex: 1;
@@ -135,6 +139,7 @@
     cursor: pointer;
 }
 .input-search__yandex-search{
+    width: 100%;
     height: 100%;
     min-width: 240px;
     -webkit-box-flex: 10;
@@ -142,7 +147,7 @@
             flex-grow: 10;
     border-radius: 15px 10px 10px 15px;
     border: 2px solid #fc0;
-    padding-left: 10px;
+    padding: 10px;
     font-size: 1.3rem;
 }
 
@@ -150,14 +155,10 @@
     outline: none;
 }
 .label__logo{
-    width: 100px;
-    height: 43px;
+    min-height: 48px;
+    min-width: 100px;
     background: url(https://yastatic.net/s3/home-static/_/Y/m/iYFGil-w8xoq_2OQvnXq6EwLY.svg) 50% 50% no-repeat;
-    background-size: cover;
-
-}
-.letter__first--red{
-    color: red;
+    background-size: contain;
 }
 .link__foot{
     color: #999;
@@ -166,13 +167,21 @@
 .link{
     text-decoration: unset;
 }
+.link:visited{
+    color: #a58bdd;
+}
 .link:hover{
     color: #c00;
 }
+.link:active{
+    color: #0db159;
+}
+
 .link__ul-item{
     color: #0054b9;
 }
 .main{
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -180,17 +189,17 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-}
-.logo__yandex-logo{
-    font-weight: 600;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .un-icon-item {
     list-style: none;
     max-width: 700px;
-    margin: 20px 0 0
 }
 
 .unordered-list__services{
@@ -209,7 +218,9 @@
             padding-inline-start: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
     max-width: 750px;
-    margin: 50px auto;
+    margin: 0 auto;
+    row-gap: 20px;
 }
 /*# sourceMappingURL=../sourcemaps/style.css.map */

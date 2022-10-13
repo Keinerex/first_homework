@@ -1,5 +1,6 @@
 .input-search__submit-button{
     height: 100%;
+    margin: auto;
     max-width: 100px;
     min-width: 80px;
     flex-grow: 1;

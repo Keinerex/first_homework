@@ -1,8 +1,9 @@
 .body {
-    margin: 0;
-    padding: 50px 50px 0 50px;
+    margin: 0 auto;
     font: 0.94em Arial, Helvetica, sans-serif;
-    height: calc(100vh - 50px);
+    height: 95vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
