@@ -1,0 +1,23 @@
+{
+  "name": "untitled4",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "require-dir": "^1.2.0"
+  },
+  "scripts": {
+    "start": "set NODE_ENV=development & gulp develop",
+    "build": "set NODE_ENV=production & gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "http-server": "^14.1.1"
+  }
+}

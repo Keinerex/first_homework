@@ -1,0 +1,40 @@
+.icon__service {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 3px 10px 3px 3px;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+
+}
+
+.icon__service--market {
+    background-image: url(https://yastatic.net/market-export/_/i/favicon/ymnew/16.png);
+}
+
+.icon__service--edadil {
+    background-image: url(https://yastatic.net/s3/edadeal-public-static/web/app/b7f8acb3142542/static/img/favicon-16x16.png);
+}
+
+.icon__service--plus {
+    background-image: url(https://yastat.net/s3/plus/landing/2022/icons/favicon-16x16.png);
+}
+
+.icon__service--music {
+    background-image: url(https://music.yandex.ru//favicon16.png);
+}
+
+.icon__service--kino {
+    background-image: url(https://yastatic.net/s3/kinopoisk-frontend/common-static/img/projector-favicon/favicon-16.svg);
+}
+
+.icon__service--toloka {
+    background-image: url(https://yastatic.net/s3/toloka/p/worker/favicon.47ddfe2f33d5e1fb670cae6cfc801e8f.ico);
+
+}
+
+.icon__service--practicum {
+    background-image: url(//yastatic.net/s3/home/services/all/svg/praktikum0.svg)
+}

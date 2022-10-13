@@ -1,0 +1,9 @@
+.form-search__yandex{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    margin-block-end: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

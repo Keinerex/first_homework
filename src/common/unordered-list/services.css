@@ -1,0 +1,11 @@
+.unordered-list__services{
+    font-size: 1.3em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 347px);
+    flex-direction: row;
+    padding-inline-start: 0;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin: 50px auto;
+}

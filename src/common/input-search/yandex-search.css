@@ -1,0 +1,13 @@
+.input-search__yandex-search{
+    height: 100%;
+    min-width: 240px;
+    flex-grow: 10;
+    border-radius: 15px 10px 10px 15px;
+    border: 2px solid #fc0;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.input-search__yandex-search:focus-visible{
+    outline: none;
+}

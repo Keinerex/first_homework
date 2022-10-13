@@ -1,0 +1,7 @@
+.container__top{
+    max-width: 700px;
+    width: 100%;
+    flex-shrink: 0;
+    min-height: 100px;
+    margin: auto auto;
+}
