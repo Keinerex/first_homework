@@ -125,7 +125,7 @@
             flex-grow: 1;
     gap: 0;
     background: #ffcc00;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 .input-search__submit-button{
     height: 100%;
