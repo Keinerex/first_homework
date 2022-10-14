@@ -8,7 +8,26 @@ const babel = require('gulp-babel');
 const {src, dest} = require('gulp');
 const uglify = require('gulp-uglify-es').default;
 
+gulp.task('min_js', function () {
+    return src(['src/common/**/*.js', 'src/js/01_main.js'], {allowEmpty: true})
+        .pipe(map.init())
+        .pipe(uglify())
+        .pipe(concat('main.min.js'))
+        .pipe(map.write('../sourcemaps'))
+        .pipe(gulp.dest('build/'))
+})
 
+gulp.task('js', function () {
+    return src(['src/common/**/*.js', 'src/js/01_main.js'], {allowEmpty: true})
+        .pipe(map.init())
+        .pipe(uglify())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(concat('main.js'))
+        .pipe(map.write('../sourcemaps'))
+        .pipe(gulp.dest('build/'))
+})
 gulp.task('html', function () {
     return gulp.src('src/pages/*.html')
         .pipe(map.init())
@@ -43,26 +62,6 @@ gulp.task('css', function () {
         .pipe(connect.reload());
 });
 
-gulp.task('min_js', function () {
-    return src(['src/common/**/*.js', 'src/js/01_main.js'], {allowEmpty: true})
-        .pipe(map.init())
-        .pipe(uglify())
-        .pipe(concat('main.min.js'))
-        .pipe(map.write('../sourcemaps'))
-        .pipe(gulp.dest('build/'))
-})
-gulp.task('js', function () {
-    return src(['src/common/**/*.js', 'src/js/01_main.js'], {allowEmpty: true})
-        .pipe(map.init())
-        .pipe(uglify())
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(concat('main.js'))
-        .pipe(map.write('../sourcemaps'))
-        .pipe(gulp.dest('build/'))
-})
-
 
 gulp.task('server', function () {
     return connect.server({
@@ -79,7 +78,7 @@ gulp.task('watch', function () {
 })
 
 
-gulp.task('build', gulp.parallel('css', 'min_css', 'html', 'js', 'js_min'), function () {
+gulp.task('build', gulp.parallel('css', 'min_css', 'html', 'js', 'min_js'), function () {
 });
 
 gulp.task('develop', gulp.parallel('server', 'watch'), function () {

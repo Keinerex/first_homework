@@ -1,5 +1,7 @@
 .content{
+    max-width: 700px;
+    margin: 30px auto;
     font-weight: unset;
-    text-align: center;
+    text-align: start;
     width: 100%;
 }
