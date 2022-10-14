@@ -1,7 +1,7 @@
 .body {
     margin: 0 auto;
     font: 0.94em Arial, Helvetica, sans-serif;
-    height: 95vh;
+    height: 97vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
