@@ -68,7 +68,7 @@ gulp.task('watch', function () {
 })
 
 
-gulp.task('build', gulp.parallel('css', 'min_css', 'html', 'js'), function () {
+gulp.task('build', gulp.parallel('css', 'min_css', 'html'), function () {
 });
 
 gulp.task('develop', gulp.parallel('server', 'watch'), function () {

@@ -16,17 +16,6 @@
         -ms-flex-align: center;
             align-items: center;
 }
-.container{
-    width: 100%;
-}
-.container__top{
-    font-weight: 700;
-    max-width: 700px;
-    width: 100%;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    margin: 0 auto;
-}
 .content{
     font-weight: unset;
     text-align: center;
@@ -105,6 +94,12 @@
 .icon__service--practicum {
     background-image: url(https://yastatic.net/s3/home/services/all/svg/praktikum0.svg)
 }
+.label__logo{
+    min-height: 48px;
+    min-width: 100px;
+    background: url(https://yastatic.net/s3/home-static/_/Y/m/iYFGil-w8xoq_2OQvnXq6EwLY.svg) 50% 50% no-repeat;
+    background-size: contain;
+}
 .input-search__search-button-connect{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -153,12 +148,6 @@
 
 .input-search__yandex-search:focus-visible{
     outline: none;
-}
-.label__logo{
-    min-height: 48px;
-    min-width: 100px;
-    background: url(https://yastatic.net/s3/home-static/_/Y/m/iYFGil-w8xoq_2OQvnXq6EwLY.svg) 50% 50% no-repeat;
-    background-size: contain;
 }
 .link__foot{
     color: #999;
@@ -222,5 +211,16 @@
     max-width: 750px;
     margin: 0 auto;
     row-gap: 20px;
+}
+.container{
+    width: 100%;
+}
+.container__top{
+    font-weight: 700;
+    max-width: 700px;
+    width: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin: 0 auto;
 }
 /*# sourceMappingURL=../sourcemaps/style.css.map */
