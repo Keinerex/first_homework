@@ -4,6 +4,7 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
@@ -14,7 +15,10 @@
   },
   "scripts": {
     "start": "set NODE_ENV=development & gulp develop",
-    "build": "set NODE_ENV=production & gulp build"
+    "build": "set NODE_ENV=production & gulp build",
+    "js": "set NODE_ENV=development & gulp js & gulp min_js",
+    "css": "set NODE_ENV=development & gulp css & gulp min_css",
+    "html": "set NODE_ENV=development & gulp html"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
