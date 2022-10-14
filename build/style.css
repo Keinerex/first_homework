@@ -1,16 +1,3 @@
-.container{
-    width: 100%;
-    max-width: 920px;
-    margin: 0 auto;
-}
-.container__top{
-    font-weight: 700;
-
-    width: 100%;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    margin: 0 auto;
-}
 .body {
     margin: 0 auto;
     font: 0.94em Arial, Helvetica, sans-serif;
@@ -28,6 +15,19 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+.container__top{
+    font-weight: 700;
+
+    width: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin: 0 auto;
 }
 .content{
     max-width: 700px;
@@ -57,6 +57,20 @@
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 0 auto;
+}
+.form-search__yandex{
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
 }
 .icon__service {
     display: inline-block;
@@ -97,26 +111,6 @@
 
 .icon__service--practicum {
     background-image: url(https://yastatic.net/s3/home/services/all/svg/praktikum0.svg)
-}
-.form-search__yandex{
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-margin-after: 0;
-            margin-block-end: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 10px;
-}
-.label__logo{
-    min-height: 48px;
-    min-width: 100px;
-    background: url(https://yastatic.net/s3/home-static/_/Y/m/iYFGil-w8xoq_2OQvnXq6EwLY.svg) 50% 50% no-repeat;
-    background-size: contain;
 }
 .input-search__search-button-connect{
     display: -webkit-box;
@@ -166,6 +160,12 @@
 
 .input-search__yandex-search:focus-visible{
     outline: none;
+}
+.label__logo{
+    min-height: 48px;
+    min-width: 100px;
+    background: url(https://yastatic.net/s3/home-static/_/Y/m/iYFGil-w8xoq_2OQvnXq6EwLY.svg) 50% 50% no-repeat;
+    background-size: contain;
 }
 .link__foot{
     color: #999;
